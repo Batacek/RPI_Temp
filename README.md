@@ -1,4 +1,7 @@
 # RPI Temperature
+[![License](https://img.shields.io/github/license/Batacek/RPI_Temp)](LICENSE)
+[![Lang](https://img.shields.io/badge/Language-MicroPython-green)](Lang)
+<br>
 Temperature measurement with RPI and temperature sensor using OneWire communication
 
 # Physical Connection
