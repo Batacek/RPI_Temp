@@ -20,3 +20,6 @@ Once this step is complete, the I2C display must be connected to the I2C interfa
 <img src="rpi_left.jpg" width=159 height=252> <img src="I2C_LCD.jpg" width=159 height=252><br><br>
 Once this has been completed, the RPI Pico should be connected into the required setup, as illustrated below.<br><br>
 <img src="rpi.jpg" width=795 height=1260>
+<br>
+# Code
+The code relies on the lcd_api and pico_i2c_lcd libraries. These libraries are included in the repository, however, these may be outdated versions. Potential issues with these versions can be resolved by using the latest version from the official libraries pages.
