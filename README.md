@@ -5,7 +5,7 @@ Temperature measurement with RPI and temperature sensor using OneWire communicat
 The initial step is to connect the temperature sensor, which uses OneWire communication, to your RPI Pico.
 <br>
 <br>
-<img src="temp.jpg" height=159 width=252><img src="rpi_right">
+<img src="temp.jpg" height=159 width=252> <img src="rpi_right.jpg" height=159 width=252>
 <br>
 <br>
 Black is for GND<br>
