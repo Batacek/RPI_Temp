@@ -17,7 +17,10 @@ while True:
 
     for rom in roms:
         print("Temperature (Sensor):	", s.read_temp(rom), "°C")
-    print("Temperature (Built-in):	", (27 - (bts - 0.706) / 0.001721), "°C")
-
+    if ((27 - (bts - 0.706) / 0.001721) < 0):
+        print("Temperature (Built-in):	", -1 * (27 - (bts - 0.706) / 0.001721), "°C")
+    elif ((27 - (bts - 0.706) / 0.001721) >= 0):
+        print("Temperature (Built-in):	", (27 - (bts - 0.706) / 0.001721), "°C")
 
     time.sleep_ms(250)
+
