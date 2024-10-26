@@ -3,19 +3,21 @@ import onewire
 import ds18x20
 import time
 
-ds_pin = machine.Pin(28)
+ts_pin = machine.Pin(28)
+builtin_ts_pin = machine.ADC(4)
 
-ow = onewire.OneWire(ds_pin)
-ds = ds18x20.DS18X20(ow)
+s = ds18x20.DS18X20(onewire.OneWire(ts_pin))
+bts = builtin_ts_pin.read_u16() * (3.3 / 65535)
 
-roms = ds.scan()
+roms = s.scan()
 
 while True:
-    ds.convert_temp()
+    s.convert_temp()
     time.sleep_ms(750)
 
     for rom in roms:
-        print("Temperature:", ds.read_temp(rom), "°C")
+        print("Temperature (Sensor):	", s.read_temp(rom), "°C")
+    print("Temperature (Built-in):	", (27 - (bts - 0.706) / 0.001721), "°C")
 
-    time.sleep(1)
 
+    time.sleep_ms(250)
