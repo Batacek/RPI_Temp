@@ -16,7 +16,7 @@ A resistor with a value of 6.04 KOhm is used to connect VCC and OW.<br>
 The colors of the wires on the temperature sensor should be identical. Each wire should be connected to a corresponding wire of the same color (black to black, etc.). If a different temperature sensor is being used, the provided documentation should be read to ascertain the correct wiring procedure.
 <br>
 <br>
-After this connect the I2C display to the I2C interface (SDA and SCL) and power (VCC and GND)<br><br>
+Once this step is complete, the I2C display must be connected to the I2C interface (SDA and SCL) and the power source (VCC and GND).<br><br>
 <img src="rpi_left.jpg" width=159 height=252> <img src="I2C_LCD.jpg" width=159 height=252><br><br>
-After this your RPI Pico should be connected like this:<br><br>
+Once this has been completed, the RPI Pico should be connected into the required setup, as illustrated below.<br><br>
 <img src="rpi.jpg" width=795 height=1260>
